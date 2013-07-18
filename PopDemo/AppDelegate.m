@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "ListViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
     EUNavigationController *nav = [[EUNavigationController alloc] initWithRootViewController:self.viewController];
     
     self.window.rootViewController = nav;

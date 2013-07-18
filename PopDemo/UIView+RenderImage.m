@@ -7,14 +7,10 @@
 //
 
 #import "UIView+RenderImage.h"
-
-
 #import <QuartzCore/QuartzCore.h>
-
 
 @implementation UIView (RenderImage)
 
-//截图
 - (UIImage *)imageByRenderingView {
 	CGFloat oldAlpha = self.alpha;
 	
@@ -27,4 +23,5 @@
 	
 	return resultingImage;
 }
+
 @end

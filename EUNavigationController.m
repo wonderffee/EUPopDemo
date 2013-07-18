@@ -30,7 +30,7 @@
     [super pushViewController:viewController animated:animated];
 }
 
-//各种方式删除截图
+//各种删除截图
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
     UIViewController *controller = [super popViewControllerAnimated:animated];
     

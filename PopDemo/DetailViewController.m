@@ -9,7 +9,6 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController () {
-    UIButton *_buttonPop;
     int addbg;
     
     CGPoint pointBegan;
@@ -39,16 +38,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _buttonPop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _buttonPop.frame  = CGRectMake(10, 10, 70, 30);
-    [_buttonPop setTitle:@"pop" forState:UIControlStateNormal];
-    [_buttonPop addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_buttonPop];
+
     self.view.backgroundColor = [UIColor grayColor];
-    
-//    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] ;
-//    [panRecognizer setMaximumNumberOfTouches:1];
-//    [self.view addGestureRecognizer:panRecognizer];
 }
 
 - (void)viewDidUnload {
@@ -61,15 +52,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (void)pop {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-//-(void)handleGesture:(UIGestureRecognizer*)gestureRecognizer {
-//    UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
-//    NSLog(@"direction is: %f %f", [pan translationInView:self.view].x, [pan translationInView:self.view].y);
-//}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     CGPoint endLocation = [[touches anyObject] locationInView:self.view];
@@ -84,8 +66,6 @@
         [_animationBg addSubview:_lastView];
         [_animationBg addSubview:_currentView];
         [self.view.window addSubview:_animationBg];
-//        [self.view.window addSubview:_lastView];
-//        [self.view.window addSubview:_currentView];
         addbg = 1;
     }
 }
@@ -114,7 +94,7 @@
 }
 
 - (UIView *)getlastView {
-    UIView *lastView = [[UIView alloc] initWithFrame:CGRectMake(5, 5, 320, 460)];
+    UIView *lastView = [[UIView alloc] initWithFrame:CGRectMake(5, 8, 320, 460)];
     
     //nav
     EUNavigationController *nav = (EUNavigationController *)self.navigationController;
@@ -134,8 +114,6 @@
     _lastViewShadow.alpha = 0.5;
     [lastView addSubview:_lastViewShadow];
     
-
-    
     return lastView;
 }
 
@@ -146,9 +124,18 @@
     float moveX = endLocation.x - pointBegan.x;
     NSLog(@"move x is: %f", moveX);
     
+    if (moveX < 0) {
+        moveX = 0;
+    }
     CGRect oldFrame = _currentView.frame;
     oldFrame.origin.x = moveX;
     _currentView.frame = oldFrame;
+    
+    
+    float lastViewX = (320 - moveX) / 320  * 5;
+    float lastViewY = (320 - moveX) / 320 * 8;
+    _lastViewShadow.alpha = (320 - moveX) / 320 * 0.5;
+    _lastView.frame = CGRectMake(lastViewX, lastViewY, 320, 460);
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
