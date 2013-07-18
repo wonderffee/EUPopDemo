@@ -24,10 +24,11 @@
 		642CEC801797814A00EC6C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 642CEC7E1797814A00EC6C04 /* InfoPlist.strings */; };
 		642CEC831797814A00EC6C04 /* PopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC821797814A00EC6C04 /* PopDemoTests.m */; };
 		642CEC8E179781AE00EC6C04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC8D179781AE00EC6C04 /* DetailViewController.m */; };
-		642CEC9717978D9E00EC6C04 /* EUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9617978D9E00EC6C04 /* EUNavigationController.m */; };
-		642CEC9A1797901500EC6C04 /* UIView+RenderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC991797901500EC6C04 /* UIView+RenderImage.m */; };
-		642CEC9D1797D8A500EC6C04 /* EUPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */; };
-		642CECA01797DF7B00EC6C04 /* EUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9F1797DF7B00EC6C04 /* EUViewController.m */; };
+		642CECA31797E1B200EC6C04 /* SubDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CECA21797E1B100EC6C04 /* SubDetailViewController.m */; };
+		642CECAD1797E38A00EC6C04 /* EUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CECA61797E38A00EC6C04 /* EUNavigationController.m */; };
+		642CECAE1797E38A00EC6C04 /* EUPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CECA81797E38A00EC6C04 /* EUPopAnimation.m */; };
+		642CECAF1797E38A00EC6C04 /* EUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CECAA1797E38A00EC6C04 /* EUViewController.m */; };
+		642CECB01797E38A00EC6C04 /* UIView+RenderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CECAC1797E38A00EC6C04 /* UIView+RenderImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +66,16 @@
 		642CEC821797814A00EC6C04 /* PopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopDemoTests.m; sourceTree = "<group>"; };
 		642CEC8C179781AE00EC6C04 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		642CEC8D179781AE00EC6C04 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		642CEC9517978D9E00EC6C04 /* EUNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EUNavigationController.h; path = ../EUNavigationController.h; sourceTree = "<group>"; };
-		642CEC9617978D9E00EC6C04 /* EUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUNavigationController.m; path = ../EUNavigationController.m; sourceTree = "<group>"; };
-		642CEC981797901500EC6C04 /* UIView+RenderImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RenderImage.h"; sourceTree = "<group>"; };
-		642CEC991797901500EC6C04 /* UIView+RenderImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RenderImage.m"; sourceTree = "<group>"; };
-		642CEC9B1797D8A500EC6C04 /* EUPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPopAnimation.h; sourceTree = "<group>"; };
-		642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUPopAnimation.m; sourceTree = "<group>"; };
-		642CEC9E1797DF7B00EC6C04 /* EUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUViewController.h; sourceTree = "<group>"; };
-		642CEC9F1797DF7B00EC6C04 /* EUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUViewController.m; sourceTree = "<group>"; };
+		642CECA11797E1B100EC6C04 /* SubDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubDetailViewController.h; sourceTree = "<group>"; };
+		642CECA21797E1B100EC6C04 /* SubDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubDetailViewController.m; sourceTree = "<group>"; };
+		642CECA51797E38A00EC6C04 /* EUNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUNavigationController.h; sourceTree = "<group>"; };
+		642CECA61797E38A00EC6C04 /* EUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUNavigationController.m; sourceTree = "<group>"; };
+		642CECA71797E38A00EC6C04 /* EUPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPopAnimation.h; sourceTree = "<group>"; };
+		642CECA81797E38A00EC6C04 /* EUPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUPopAnimation.m; sourceTree = "<group>"; };
+		642CECA91797E38A00EC6C04 /* EUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUViewController.h; sourceTree = "<group>"; };
+		642CECAA1797E38A00EC6C04 /* EUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUViewController.m; sourceTree = "<group>"; };
+		642CECAB1797E38A00EC6C04 /* UIView+RenderImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RenderImage.h"; sourceTree = "<group>"; };
+		642CECAC1797E38A00EC6C04 /* UIView+RenderImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RenderImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 		642CEC571797814A00EC6C04 /* PopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				642CECA41797E38A00EC6C04 /* EUPopAnimation */,
 				642CEC601797814A00EC6C04 /* AppDelegate.h */,
 				642CEC611797814A00EC6C04 /* AppDelegate.m */,
 				642CEC691797814A00EC6C04 /* ListViewController.h */,
@@ -139,14 +143,8 @@
 				642CEC6C1797814A00EC6C04 /* ListViewController.xib */,
 				642CEC8C179781AE00EC6C04 /* DetailViewController.h */,
 				642CEC8D179781AE00EC6C04 /* DetailViewController.m */,
-				642CEC9E1797DF7B00EC6C04 /* EUViewController.h */,
-				642CEC9F1797DF7B00EC6C04 /* EUViewController.m */,
-				642CEC9B1797D8A500EC6C04 /* EUPopAnimation.h */,
-				642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */,
-				642CEC9517978D9E00EC6C04 /* EUNavigationController.h */,
-				642CEC9617978D9E00EC6C04 /* EUNavigationController.m */,
-				642CEC981797901500EC6C04 /* UIView+RenderImage.h */,
-				642CEC991797901500EC6C04 /* UIView+RenderImage.m */,
+				642CECA11797E1B100EC6C04 /* SubDetailViewController.h */,
+				642CECA21797E1B100EC6C04 /* SubDetailViewController.m */,
 				642CEC581797814A00EC6C04 /* Supporting Files */,
 			);
 			path = PopDemo;
@@ -184,6 +182,21 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		642CECA41797E38A00EC6C04 /* EUPopAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				642CECA51797E38A00EC6C04 /* EUNavigationController.h */,
+				642CECA61797E38A00EC6C04 /* EUNavigationController.m */,
+				642CECA71797E38A00EC6C04 /* EUPopAnimation.h */,
+				642CECA81797E38A00EC6C04 /* EUPopAnimation.m */,
+				642CECA91797E38A00EC6C04 /* EUViewController.h */,
+				642CECAA1797E38A00EC6C04 /* EUViewController.m */,
+				642CECAB1797E38A00EC6C04 /* UIView+RenderImage.h */,
+				642CECAC1797E38A00EC6C04 /* UIView+RenderImage.m */,
+			);
+			path = EUPopAnimation;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -299,10 +312,11 @@
 				642CEC621797814A00EC6C04 /* AppDelegate.m in Sources */,
 				642CEC6B1797814A00EC6C04 /* ListViewController.m in Sources */,
 				642CEC8E179781AE00EC6C04 /* DetailViewController.m in Sources */,
-				642CEC9717978D9E00EC6C04 /* EUNavigationController.m in Sources */,
-				642CEC9A1797901500EC6C04 /* UIView+RenderImage.m in Sources */,
-				642CEC9D1797D8A500EC6C04 /* EUPopAnimation.m in Sources */,
-				642CECA01797DF7B00EC6C04 /* EUViewController.m in Sources */,
+				642CECA31797E1B200EC6C04 /* SubDetailViewController.m in Sources */,
+				642CECAD1797E38A00EC6C04 /* EUNavigationController.m in Sources */,
+				642CECAE1797E38A00EC6C04 /* EUPopAnimation.m in Sources */,
+				642CECAF1797E38A00EC6C04 /* EUViewController.m in Sources */,
+				642CECB01797E38A00EC6C04 /* UIView+RenderImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

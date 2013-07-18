@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  EUViewController.h
 //  PopDemo
 //
 //  Created by csj on 13-7-18.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : EUViewController {
-   
-}
+@interface EUViewController : UIViewController
 
 @end
 
+@interface EUViewController (PopAnimation)
+
+@end

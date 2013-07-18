@@ -7,10 +7,10 @@
 //
 
 #import "DetailViewController.h"
-#import "EUPopAnimation.h"
+#import "SubDetailViewController.h"
 
 @interface DetailViewController () {
-     
+    UIButton *_buttonPush;
 }
 
 @end
@@ -23,8 +23,8 @@
     if (self) {
         // Custom initialization
         self.title = @"Detail View Controller";
-       
     }
+    
     return self;
 }
 
@@ -34,6 +34,13 @@
 	// Do any additional setup after loading the view.
 
     self.view.backgroundColor = [UIColor grayColor];
+    
+    
+    _buttonPush = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _buttonPush.frame  = CGRectMake(10, 10, 70, 37);
+    [_buttonPush setTitle:@"push" forState:UIControlStateNormal];
+    [_buttonPush addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_buttonPush];
 }
 
 - (void)viewDidUnload {
@@ -45,6 +52,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)push{
+    [self.navigationController pushViewController:[[SubDetailViewController alloc] initWithNibName:nil bundle:nil] animated:YES];
 }
 
 @end
