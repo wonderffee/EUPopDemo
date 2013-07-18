@@ -26,6 +26,8 @@
 		642CEC8E179781AE00EC6C04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC8D179781AE00EC6C04 /* DetailViewController.m */; };
 		642CEC9717978D9E00EC6C04 /* EUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9617978D9E00EC6C04 /* EUNavigationController.m */; };
 		642CEC9A1797901500EC6C04 /* UIView+RenderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC991797901500EC6C04 /* UIView+RenderImage.m */; };
+		642CEC9D1797D8A500EC6C04 /* EUPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */; };
+		642CECA01797DF7B00EC6C04 /* EUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642CEC9F1797DF7B00EC6C04 /* EUViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		642CEC9617978D9E00EC6C04 /* EUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUNavigationController.m; path = ../EUNavigationController.m; sourceTree = "<group>"; };
 		642CEC981797901500EC6C04 /* UIView+RenderImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RenderImage.h"; sourceTree = "<group>"; };
 		642CEC991797901500EC6C04 /* UIView+RenderImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RenderImage.m"; sourceTree = "<group>"; };
+		642CEC9B1797D8A500EC6C04 /* EUPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPopAnimation.h; sourceTree = "<group>"; };
+		642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUPopAnimation.m; sourceTree = "<group>"; };
+		642CEC9E1797DF7B00EC6C04 /* EUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUViewController.h; sourceTree = "<group>"; };
+		642CEC9F1797DF7B00EC6C04 /* EUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,10 @@
 				642CEC6C1797814A00EC6C04 /* ListViewController.xib */,
 				642CEC8C179781AE00EC6C04 /* DetailViewController.h */,
 				642CEC8D179781AE00EC6C04 /* DetailViewController.m */,
+				642CEC9E1797DF7B00EC6C04 /* EUViewController.h */,
+				642CEC9F1797DF7B00EC6C04 /* EUViewController.m */,
+				642CEC9B1797D8A500EC6C04 /* EUPopAnimation.h */,
+				642CEC9C1797D8A500EC6C04 /* EUPopAnimation.m */,
 				642CEC9517978D9E00EC6C04 /* EUNavigationController.h */,
 				642CEC9617978D9E00EC6C04 /* EUNavigationController.m */,
 				642CEC981797901500EC6C04 /* UIView+RenderImage.h */,
@@ -291,6 +301,8 @@
 				642CEC8E179781AE00EC6C04 /* DetailViewController.m in Sources */,
 				642CEC9717978D9E00EC6C04 /* EUNavigationController.m in Sources */,
 				642CEC9A1797901500EC6C04 /* UIView+RenderImage.m in Sources */,
+				642CEC9D1797D8A500EC6C04 /* EUPopAnimation.m in Sources */,
+				642CECA01797DF7B00EC6C04 /* EUViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +415,7 @@
 				GCC_PREFIX_HEADER = "PopDemo/PopDemo-Prefix.pch";
 				INFOPLIST_FILE = "PopDemo/PopDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,6 +427,7 @@
 				GCC_PREFIX_HEADER = "PopDemo/PopDemo-Prefix.pch";
 				INFOPLIST_FILE = "PopDemo/PopDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
